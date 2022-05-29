@@ -1,30 +1,30 @@
 section: QOD
 Title: WORDS OF WISDOM OF THE FUCKING DAY:
-Content: JUST BECAUSE THINGS COULD HAVE BEEN DIFFERENT, IT DOESN’T MEAN THEY WOULD HAVE BEEN BETTER.
+Content: ALL GREAT ACHIEVEMENTS REQUIRE TIME.
 Link: None
 
 section: AOD
 Title: EDUCATE YOUR IGNORANT ASS:
-Content: HOW THE HELL TO WALK 12 MILES A DAY. more>>
-Link: https://href.li/?https://walkingtheworld.substack.com/p/how-to-walk-12-miles-a-day
+Content: IMPROVE YOUR SHITTY CONVERSATIONS FOREVER. more>>
+Link: https://href.li/?https://medium.com/an-idea-for-you/the-3-minutes-it-takes-to-read-this-will-improve-your-conversations-forever-cbcae519c4ea
 
 section: BOK
 Title: more>>
-Content: A HISTORY OF THE UNIVERSE IN 21 DAMN STARS. more>>
-Link: https://href.li/?https://amzn.to/3KWKDTm
+Content: MASTER YOUR LEARNING. more>>
+Link: https://href.li/?https://amzn.to/37WvpAo
 
 section: POD
 Title: FUCKING MIND-BLOWING BOOK OF THE DAY:
-Content: KEEP YOUR CAR HELLA CLEAN. more>>
-Link: https://href.li/?https://amzn.to/3skNe2Y
+Content: SIT YOUR ASS ON SOMETHING SOFT. more>>
+Link: https://href.li/?https://amzn.to/3wApcE1
 
 section: WOD
 Title: more>>
-Content: THE MOST POWERFUL FUCKING CALENDAR. more>>
-Link: https://href.li/?https://morgen.so/
+Content: SEARCH THE OLDEST RESULTS ON THE GODDAMN INTERNET. more>>
+Link: https://href.li/?https://www.oldestsearch.com/
 
 section: VOD
 Title: USEFUL SHIT OF THE GODDAMN DAY:
-Content: HOW ELECTRICITY ACTUALLY WORKS. more>>
-Link: https://href.li/?https://www.youtube.com/watch?v=oI_X2cMHNe0
+Content: MOTHERFUCKING TRUTH DECAY. more>>
+Link: https://href.li/?https://www.youtube.com/watch?v=o5RZwqgDYnQ
 

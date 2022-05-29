@@ -65,7 +65,10 @@ while not is_over_ten:
 
     # section one contain word of the day text and link
 
-
+    page_date= soup.findAll('a')[0] .getText()
+    page_day = soup.findAll('b')
+    print(page_date)
+    print(page_day)
     #"Quote of the Day: QOD"
     label1 = "QOD"
     title1 = soup.findAll('small')[0].getText()
@@ -118,6 +121,24 @@ while not is_over_ten:
 
     section6 ={ "section" : label6, "title" : title6, "content" : content_section6, "link" : link_section6 }
 
+    post_body = {"date": page_date,
+        "section1": { "section" : label1, "title" : title1, "content" : content_section1, "link" : link_section1 },
+        "section2": {"section" : label2, "title" : title2, "content" : content_section2, "link" : link_section2 },
+        "section3": { "section" : label3, "title" : title3, "content" : content_section3, "link" : link_section3 },
+        "section4": { "section" : label4, "title" : title4, "content" : content_section4, "link" : link_section4 },
+        "section5": { "section" : label5, "title" : title5, "content" : content_section5, "link" : link_section5 },
+        "section6": { "section" : label6, "title" : title6, "content" : content_section6, "link" : link_section6 }
+        }
+
+    with open('postpage.json', 'a+') as posts:
+        post_body_js = json.dump(post_body, posts, indent= 3, separators=(", ", ": "), sort_keys=False)
+    close
+     ## fix the below code with if condition 
+    with open('postpage.json', 'a+') as posts:
+        posts.writelines(",")
+    close
+
+
     button_location = 0 if len(next_url) == 0 else 1 
     print(button_location)
     print(soup.find('div', {'id': 'Footer'}).findAll('a'))
@@ -126,6 +147,7 @@ while not is_over_ten:
     next_url = url[0:-1] + page_url
     is_over_ten = True if int(page_url[6:]) > 10 else False 
     print(next_url)
+    
 
     with open('posts_list.txt', 'w') as posts_list: 
         posts_list.writelines("section: " + label1 + "\nTitle: " + title1 + "\nContent: " + content_section1 + "\nLink: " + link_section1 + "\n\n")
@@ -137,24 +159,24 @@ while not is_over_ten:
     close
         
     with open('data.json', 'a') as data: 
-        section1_vr = json.dumps(section1)
+        section1_vr = json.dumps(section1, indent= 5)
         if page_count == 1: 
             data.writelines("[")
         data.writelines(section1_vr)
         data.writelines(",")
-        section2_vr = json.dumps(section2)
+        section2_vr = json.dumps(section2, indent= 5)
         data.writelines(section2_vr)
         data.writelines(",")
-        section3_vr = json.dumps(section3)
+        section3_vr = json.dumps(section3, indent= 5)
         data.writelines(section3_vr)
         data.writelines(",")
-        section4_vr = json.dumps(section4)
+        section4_vr = json.dumps(section4, indent= 5)
         data.writelines(section4_vr)
         data.writelines(",")
-        section5_vr = json.dumps(section5)
+        section5_vr = json.dumps(section5, indent= 5)
         data.writelines(section5_vr)
         data.writelines(",")
-        section6_vr = json.dumps(section6)
+        section6_vr = json.dumps(section6, indent= 5)
         data.writelines(section6_vr)
         print(is_over_ten)
         if is_over_ten:
